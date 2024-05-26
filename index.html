@@ -1,0 +1,41 @@
+
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>你所访问的页面可能已经被删除 - 站长图库</title><link rel="stylesheet" href="notiflix.min.css"><style type="text/css">    *{padding:0;margin:0;}
+    .main{width:1380px;margin:0 auto;}
+    .main h2,.main h4,.main p{text-align:center;font-weight:normal;position:relative;z-index:2}
+    .header{height:60px;background-color:#ffcc00;width:100%;position:relative;z-index:2;}
+    .header form{float:right;position:relative;}
+    .header form input{height:36px;padding:0 15px;border-radius:20px;border:0;background:#fff;line-height:36px;margin:12px 0;min-width:360px;line-height:36px;}
+    .header form input:focus{outline:0;}
+    .header form button{position:absolute;right:0;height:36px;padding:0 15px 0 10px;background:#000;color:#fff;border-radius:0 20px 20px 0;border:0;top:12px;line-height:37px;cursor:pointer;}
+    .searchBox{height:260px;background:url(searchBar.png) no-repeat center bottom;}
+    .searchBox>.main{position:relative;height:100%;}
+    .searchBox>.main:before,.searchBox>.main:after{position:absolute;display:block;content:'';z-index:1;}
+    .searchBox>.main:before{-webkit-animation:moveRight 15s linear .01s infinite normal none;-moz-animation:moveRight 15s linear .01s infinite normal none;animation:moveRight 15s linear .01s infinite normal none;top:20px;right:0;background:url(by-1.png) no-repeat;width:357px;height:94px;}
+    .searchBox>.main:after{-webkit-animation:moveLeft 25s linear .01s infinite normal none;-moz-animation:moveLeft 25s linear .01s infinite normal none;animation:moveLeft 25s linear .01s infinite normal none;top:20px;right:0;background:url(by-2.png) no-repeat;width:312px;height:77px;}
+    @-webkit-keyframes moveRight{0%{left:0px;opacity:0}6%{opacity:1}92%{opacity:1}100%{left:800px;opacity:0}}
+    @keyframes moveRight{0%{left:0px;opacity:0}6%{opacity:1}92%{opacity:1}100%{left:800px;opacity:0}}
+    @-webkit-keyframes moveLeft{0%{opacity:0;right:0;}6%{opacity:1}90%{opacity:1}100%{opacity:0;right:1200px;}}
+    @keyframes moveLeft{0%{right:0;opacity:0}6%{opacity:1}90%{opacity:1}100%{right:1200px;opacity:0}}
+    .main h2{font-size:24px;padding-top:50px;font-weight:500;}
+    .main h4,.main p{font-size:14px;margin-top:15px;text-decoration:underline;}
+    .main p{margin-top:55px;color:#bb8202;text-decoration:none;}
+    .cat{position:absolute;z-index:3;top:260px;left:50%;border-radius:20px;box-shadow:0 1px 10px rgba(0,0,0,.04);margin-left:-285px;overflow:hidden;}
+    .home{margin-top:500px;text-align:center;}
+    .home a{height:40px;line-height:40px;display:inline-block;width:200px;color:#333;border-radius:30px;text-decoration:none;background:#eee;font-size:14px;-webkit-transition:background 0.3s ease;-moz-transition:background 0.3s ease;-o-transition:background 0.3s ease;transition:background 0.3s ease;}
+    .home a:hover{background:#ffcc00}
+    @media (max-width:720px) {
+        .main{width:100%;margin:0 auto;overflow:hidden;}
+        .header .main{text-align:center;}
+        .header{height:100px;}
+        .header form{float:none;width:70%;margin:15px auto;text-align:left;}
+        .header form input{min-width:100%;box-sizing:border-box;}
+        .cat{margin-left:-159px;top:300px;}
+        .main h4{width: 80%;margin:10px auto 0;}
+        .main p{margin-top:40px;}
+        .home{margin-top:260px;}
+    }
+    </style></head><body>
+    
+    
+    </form></div></div><div class="searchBox"><div class="main"><h2>堵小猫游戏</h2><h4>QQ：211611411</h4><p>挺有挑战的一款小游戏，围住它不容易~~</p></div><div id="catch-the-cat" class="cat"></div></div><div class="home"></div><script src="jquery.min.js"></script><script src="phaser.min.js"></script><script src="catch-the-cat.js"></script><script src="notiflix.min.js"></script><script>var w_w=9,h_h=9,r_r=13;var myVar=setInterval(myTimer,1000);var time=0;function myTimer(){time+=1;}window.game=new CatchTheCatGame({w:w_w,h:h_h,r:r_r,backgroundColor:16777215,parent:"catch-the-cat",statusBarAlign:"center",credit:"轩哥哥"});function searchSub(form){if(form.w.value==''){Notiflix.Notify.Failure('请输入关键字',{position:'center-top'});return false;}form.submit();}
+</script></body></html>
